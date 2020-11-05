@@ -1,7 +1,7 @@
 import React from 'react';
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Avatar from '../../common/images/avatar.png'
-import {AdminPage, DataUser, ImgStyle, InformUser, StyledH, TextStyle} from "./adminStyle";
+import { AdminPage, DataUser, ImgStyle, StyledH, TextStyle } from "./adminStyle";
 
 
 export default () => {
@@ -19,7 +19,6 @@ export default () => {
                 <TextStyle>Username: {user.username}</TextStyle>
                 <TextStyle>Password: {user.password}</TextStyle>
             </DataUser>
-
         </AdminPage>
 
     )

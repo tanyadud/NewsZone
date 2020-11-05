@@ -9,7 +9,6 @@ export const LogInBox = styled.div `
     padding: 80px 29px;
     background-color: #f2f2f2;
     border-radius: 2px;
-
 `
 export const InputBox = styled.input `
     margin-bottom: 10px;
@@ -18,9 +17,7 @@ export const InputBox = styled.input `
     box-sizing: border-box;
     border: none;
     border-radius: 2px;
-
 `
-
 export const Button = styled.button `
     cursor: pointer;
     width: 100%;

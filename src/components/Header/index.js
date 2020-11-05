@@ -1,6 +1,6 @@
 import React from 'react';
-import { HeaderStyle } from "./Header.style";
-import { Link } from "react-router-dom";
+import {HeaderStyle} from "./Header.style";
+import {Link} from "react-router-dom";
 
 export default () => {
 
@@ -8,7 +8,6 @@ export default () => {
         <HeaderStyle>
             <h1>News Zone</h1>
             <Link to="/login">Login</Link>
-
         </HeaderStyle>
     )
 

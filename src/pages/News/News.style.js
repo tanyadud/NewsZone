@@ -1,22 +1,12 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div `
-    height: 100%;
-
-`
-export const Content = styled.div `
-    box-sizing: border-box;
-	min-height: 100%;
-	padding-bottom: 90px;
-`
 export const NewsContainer = styled.div `
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1170px;
     margin: 0 auto;
-    margin-top: 50px;
-    
+    margin-top: 50px; 
 `
 export const NewsImg = styled.div `
     position: relative;
@@ -36,14 +26,11 @@ export const NewsBox = styled.div `
     width: 49%;
     margin-bottom: 30px;
     background-color: #fafafa;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);  
 `
 export const ImgBox = styled.div`
     overflow: hidden;
     cursor: pointer;
-    
-
 `
 export const NewsDescription = styled.div `
     margin-top: 15px;
@@ -67,6 +54,5 @@ export const ShortDescription = styled.p `
 `
 
 export const DatePublish = styled.p `
- color: #9fa0a3;
-
+    color: #9fa0a3;
 `

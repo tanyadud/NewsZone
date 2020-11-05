@@ -3,15 +3,13 @@ import data from '../../common/data/news';
 import {useHistory} from "react-router-dom";
 
 import {
-    Content,
     DatePublish, ImgBox,
     NamePage,
     NewsBox,
     NewsContainer,
     NewsDescription,
     NewsImg,
-    ShortDescription,
-    Wrapper
+    ShortDescription
 } from "./News.style";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -29,33 +27,29 @@ export default () => {
     };
 
     return (
-        <Wrapper>
+        <>
             <Header/>
-            <Content>
-                <NamePage>We seek the truth and help people understand the world.</NamePage>
-                <NewsContainer>
-                    {
-                        data.news.map(el => {
-                            return (
-                                <NewsBox key={el.id}>
-                                    <ImgBox onClick={() => openDetailedNews(el)}>
+            <NamePage>We seek the truth and help people understand the world.</NamePage>
+            <NewsContainer>
+                {
+                    data.news.map(el => {
+                        return (
+                            <NewsBox key={el.id}>
+                                <ImgBox onClick={() => openDetailedNews(el)}>
                                     <NewsImg style={{backgroundImage: `url(${el.img})`}}/>
-                                        </ImgBox>
-                                    <NewsDescription>
-                                        <h3 onClick={() => openDetailedNews(el)}>{el.name}</h3>
-                                        <ShortDescription>{el.description.slice(0, 200) + '...'}</ShortDescription>
-                                        <DatePublish>{formatDate(el.date)}</DatePublish>
-                                    </NewsDescription>
-                                </NewsBox>
-                            )
-                        })
-                    }
-                </NewsContainer>
-            </Content>
+                                </ImgBox>
+                                <NewsDescription>
+                                    <h3 onClick={() => openDetailedNews(el)}>{el.name}</h3>
+                                    <ShortDescription>{el.description.slice(0, 200) + '...'}</ShortDescription>
+                                    <DatePublish>{formatDate(el.date)}</DatePublish>
+                                </NewsDescription>
+                            </NewsBox>
+                        )
+                    })
+                }
+            </NewsContainer>
             <Footer/>
-        </Wrapper>
 
+        </>
     )
-
-
 }

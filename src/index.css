@@ -7,6 +7,11 @@ html, body,  #root {
     height: 100%;
     font-family: 'OpenSans-Light', serif;
 }
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'OpenSans-Regular', serif;

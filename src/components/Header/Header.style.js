@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderStyle = styled.div `
+export const HeaderStyle = styled.div`
     background-color: #212121;
     height: 77px;
     display: flex;
@@ -9,7 +9,6 @@ export const HeaderStyle = styled.div `
     justify-content: space-between;
     padding: 0 36px;
     a {
-    color: #ffffff;
+        color: #ffffff;
     }
- 
 `

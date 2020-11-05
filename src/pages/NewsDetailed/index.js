@@ -1,10 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import {useParams} from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
 import data from '../../common/data/news';
-
-import {DateStyle, HeaderBox, ImgBox, ImgDescription, ImgStyle, NamePage, NewsContainer} from "./NewsDetailed.style";
+import { DateStyle, HeaderBox, ImgDescription, ImgStyle, NewsContainer } from "./NewsDetailed.style";
 import Header from "../../components/Header";
-import {Content, Wrapper} from "../News/News.style";
 import Footer from "../../components/Footer";
 
 
@@ -26,26 +24,24 @@ export default () => {
             if (el.id === id) {
                 return el
             }
-        })
+        });
         setNews(newsDescription);
 
     }, []);
 
 
     return (
-        <Wrapper>
+        <>
             <Header/>
-            <Content>
-                <NewsContainer>
-                    <HeaderBox>{news.name}</HeaderBox>
-                    <ImgDescription>
-                        <ImgStyle style={{backgroundImage: `url(${news.img})`}}/>
-                        <p>{news.description}</p>
-                    </ImgDescription>
-                    <DateStyle>Published {formatDate(news.date)}</DateStyle>
-                </NewsContainer>
-            </Content>
+            <NewsContainer>
+                <HeaderBox>{news.name}</HeaderBox>
+                <ImgDescription>
+                    <ImgStyle style={{backgroundImage: `url(${news.img})`}}/>
+                    <p>{news.description}</p>
+                </ImgDescription>
+                <DateStyle>Published {formatDate(news.date)}</DateStyle>
+            </NewsContainer>
             <Footer/>
-        </Wrapper>
+        </>
     )
 }
