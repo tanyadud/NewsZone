@@ -40,7 +40,7 @@ export default () => {
                                 </ImgBox>
                                 <NewsDescription>
                                     <h3 onClick={() => openDetailedNews(el)}>{el.name}</h3>
-                                    <ShortDescription>{el.description.slice(0, 200) + '...'}</ShortDescription>
+                                    <ShortDescription>{el.shortDescription}</ShortDescription>
                                     <DatePublish>{formatDate(el.date)}</DatePublish>
                                 </NewsDescription>
                             </NewsBox>
