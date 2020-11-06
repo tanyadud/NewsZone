@@ -1,15 +1,14 @@
 import React from 'react';
-import { useHistory } from "react-router-dom";
-import Avatar from '../../common/images/avatar.png'
-import { AdminPage, DataUser, ImgStyle, StyledH, TextStyle } from "./adminStyle";
+import {useHistory} from 'react-router-dom';
+import Avatar from '../../common/images/avatar.png';
+import {AdminPage, DataUser, ImgStyle, StyledH, TextStyle} from './adminStyle';
 
 
 export default () => {
-    let history = useHistory();
+    const history = useHistory();
     const user = JSON.parse(localStorage.getItem('user')) || {};
 
     !localStorage.getItem('user') && history.push('/login');
-
 
     return (
         <AdminPage>

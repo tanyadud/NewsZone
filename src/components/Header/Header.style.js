@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const HeaderStyle = styled.div`
+export const HeaderStyle = styled.div `
     background-color: #212121;
     height: 77px;
     display: flex;
@@ -11,4 +11,11 @@ export const HeaderStyle = styled.div`
     a {
         color: #ffffff;
     }
-`
+`;
+export const NameTitle = styled.div `
+    a {
+        text-decoration: none;
+        font-family: 'OpenSans-Regular', serif;
+        font-size: 30px;
+    }
+`;

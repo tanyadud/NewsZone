@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const LogInBox = styled.div `
     display: flex;
     flex-direction: column;
@@ -9,7 +8,7 @@ export const LogInBox = styled.div `
     padding: 80px 29px;
     background-color: #f2f2f2;
     border-radius: 2px;
-`
+`;
 export const InputBox = styled.input `
     margin-bottom: 10px;
     width: 100%;
@@ -17,7 +16,7 @@ export const InputBox = styled.input `
     box-sizing: border-box;
     border: none;
     border-radius: 2px;
-`
+`;
 export const Button = styled.button `
     cursor: pointer;
     width: 100%;
@@ -31,17 +30,17 @@ export const Button = styled.button `
     &:disabled {
         background: #49494a;
     }
-`
+`;
 export const H2Style = styled.h2 `
     margin-bottom: 36px;
     background-color: #f2f2f2
     margin-top: 23px;
 
-`
+`;
 export const LogInPage = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-`
+`;
 

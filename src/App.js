@@ -1,13 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import DetailedPage from './pages/NewsDetailed';
 import NewsBlock from './pages/News';
-import './App.css';
 import LogIn from './pages/LogIn';
-import Admin from './pages/Admin'
+import Admin from './pages/Admin';
+import './App.css';
 
 const App = () => {
-
     return (
         <Router>
             <div className="App">
@@ -33,7 +32,6 @@ const App = () => {
             </div>
         </Router>
     )
-
 };
 
 export default App;

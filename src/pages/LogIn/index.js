@@ -1,32 +1,31 @@
-import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
-import { Button, H2Style, InputBox, LogInBox, LogInPage } from "./LogInStyle";
+import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom';
+import {Button, H2Style, InputBox, LogInBox, LogInPage} from './LogInStyle';
 import axios from 'axios';
 
 
 export default () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    let history = useHistory();
-
+    const history = useHistory();
 
     const serverRequest = () => {
         return axios
             .get('/')
             .then(() => {
                 const user = {
-                    username: username,
-                    password: password
+                    username,
+                    password
                 };
                 localStorage.setItem('user', JSON.stringify(user));
                 history.push('/admin');
-            });
+            })
+            .catch((error) => console.log('serverRequest', error))
     };
 
     const isFormValid = () => {
-        return username !== "" && password !== ""
+        return username !== '' && password !== ''
     };
-
 
     return (
         <LogInPage>

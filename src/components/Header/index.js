@@ -1,14 +1,13 @@
 import React from 'react';
-import {HeaderStyle} from "./Header.style";
-import {Link} from "react-router-dom";
+import {HeaderStyle, NameTitle} from './Header.style';
+import {Link} from 'react-router-dom';
 
-export default () => {
+export default () => (
+    <HeaderStyle>
+        <NameTitle>
+            <Link to="./">News Zone</Link>
+        </NameTitle>
+        <Link to="/login">Login</Link>
+    </HeaderStyle>
+)
 
-    return (
-        <HeaderStyle>
-            <h1>News Zone</h1>
-            <Link to="/login">Login</Link>
-        </HeaderStyle>
-    )
-
-}

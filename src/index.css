@@ -3,21 +3,20 @@
     padding: 0;
 }
 
-html, body,  #root {
+html, body, #root {
     height: 100%;
     font-family: 'OpenSans-Light', serif;
+    overflow: auto;
 }
-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
+
+.container {
+    overflow: auto;
+    min-height: calc(100% - 77px);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'OpenSans-Regular', serif;
 }
-
-
 
 @font-face {
     font-family: 'OpenSans-Light';
